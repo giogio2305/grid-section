@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid section</title>
+</head>
+<body>
+    <section id="grid">
+        <div class="gsc">
+            <div class="tc">
+                    <h1 class="ht">Protection acrylique</h1>
+                    <h6 class="st">Découvrez la liste de nos protection Acrylique Anti UV 99,9%</h6>
+                    <a href="#"><button class="bbt">Découvrir</button></a>
+                </div>
+                <div class="vic">
+                    <img src="./assets/visuel1.png" alt="visuel1">
+                </div>
+        </div>
+        <div class="gsc">
+            <div class="tc">
+                    <h1 class="ht">Zip Portfolio</h1>
+                    <h6 class="st">Découvrez la liste de nos Portfolio Top Loader et Portfolio Carte</h6>
+                    <a href="#"><button class="bbt">Découvrir</button></a>
+                </div>
+                <div class="vic">
+                    <img src="./assets/visuel2.png" alt="visuel1">
+                </div>
+        </div>
+        <div class="gsc">
+            <div class="tc">
+                    <h1 class="ht">Accessoire</h1>
+                    <h6 class="st">Découvrez la liste de nos Top loader , sleeves , save cards</h6>
+                    <a href="#"><button class="bbt">Découvrir</button></a>
+                </div>
+                <div class="vic">
+                    <img src="./assets/visuel3.png" alt="visuel1">
+                </div>
+        </div>
+        <div class="gsc ac">
+            <div class="bl"></div>
+            <div class="tc">
+                <h1 class="ht">Actualité</h1>
+                <h6 class="st">Découvrez notre actualité retour de stock , nouveauté</h6>
+                <a href="#"><button class="bbt">Découvrir</button></a>
+            </div>
+        </div>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98772,98773,98775,98770,98771,98769');
+            body{
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                font-family: 'SF Pro Display', sans-serif;
+            }
+            #grid{
+            width: 100%;
+            max-height: 100%;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            }
+            #grid .gsc{
+                width: 636px;
+                height: 474px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #F5F5F5;
+                overflow: clip;
+                text-align: center;
+            }
+            #grid .ac{
+                position: relative;
+                background-color: #0E0E0E;
+            }
+            #grid .ac .tc .ht{
+                color: #fff;
+            }
+            #grid .ac .tc .st{
+                color: #f7f7f7;
+                opacity: 0.5;
+            }
+            #grid .bl{
+                position: absolute;
+                width: 226px;
+                height: 299px;
+                background-color: #FF5CF8;
+                filter: blur(72px);
+                opacity: 0.7;
+                z-index: 0;
+            }
+            #grid .gsc:nth-child(1), .gsc:nth-child(2){
+                margin-bottom: 20px;
+            }
+            #grid .bbt{
+                padding: 12px 20px;
+                border-radius: 24px;
+                background-color: #0048D5;
+                color: #fff;
+                text-decoration: none;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 300;
+                font-family: 'SF Pro Display', sans-serif;
+            }
+            #grid .ht{
+                font-size: 30pt;
+                font-weight: bold;
+                margin: 0;
+            }
+            #grid .st{
+                font-size: 16pt;
+                color: #737373;
+                font-weight: 400;
+                max-width: 50%;
+                margin: 16px 0;
+            }
+            #grid .tc{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 274px;
+                text-align: center;
+                margin-top: 40px;
+                z-index: 1;
+            }
+            #grid .vic{
+                width: 437px;
+                height: 274px;
+            }
+            #grid .vic img{
+                width: 100%;
+                height: 100%;
+                object-position: top;
+                object-fit: cover;
+            }
+            @media screen and (max-width: 600px) {
+            #grid{
+                margin: 0;
+            }
+            #grid .gsc{
+                    padding-top: 40px;
+            }
+            #grid .ht{
+                font-size: 28pt;
+            }
+            #grid .st{
+                font-size: 14pt;
+                max-width: 80%;
+            }
+            #grid .gsc:nth-child(1), .gsc:nth-child(2){
+                margin-bottom: 0px;
+            }
+            #grid .gsc {
+                margin: 16px 0;
+            }
+            #grid .vic{
+                width: 417px;
+                height: 254px;
+            }
+            }
+        </style>
+    </section>
+</body>
+</html>
